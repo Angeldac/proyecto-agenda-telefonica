@@ -83,11 +83,12 @@ public class ventana extends JFrame {
 
                 } else {
                     numero = Integer.parseInt(txtv.getText());
-                    nombre=txtn.getText();
-                    correo=txtc.getText();
-                    
+                    nombre = txtn.getText();
+                    correo = txtc.getText();
 
                 }
+                JOptionPane.showMessageDialog(null, "guardado con exito");
+
                 txtv.setText("");
                 txtn.setText("");
                 txtc.setText("");
@@ -105,7 +106,7 @@ public class ventana extends JFrame {
         btnb.setBounds(500, 130, 100, 70);
         inicio.add(btnb);
         btnb.repaint();
-        
+
         ActionListener buscar = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -113,11 +114,8 @@ public class ventana extends JFrame {
                     JOptionPane.showMessageDialog(null, "ingrese el valor");
 
                 } else {
-                    
-                    
 
                 }
-                
 
             }
         };
